@@ -1,0 +1,124 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List App</title>
+    <link rel="shortcut icon" href="./list.png" type="image/x-icon">
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}        
+.main{
+    width: 320px;
+    padding: 20px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h1{
+    display: inline-block;
+    margin-left: -40px;
+}
+input{
+    width: 240px;
+    font-size: larger;
+    height: 20px;
+    padding: 10px;
+    border-color: purple;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+button{
+    width: 200px;
+    font-size: 20px;
+    height: 30px;
+    background-color: rgba(9,9,121,1);
+    border-color: transparent;
+    cursor: pointer;
+    color: white;
+    border-radius: 6px;
+
+}
+button:hover{
+    background-color: rgba(9, 9, 121, 0.779);
+}
+ul{
+    background-color: black; 
+    padding: 10px;
+    width: 320px;
+    height: 20px;
+    text-align: left;
+    font-size: large;
+    color: white;
+    border-radius: 6px;
+   
+}
+.adtext{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+p{
+    padding: 0;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: smaller;
+    margin-left: 35px;
+    color: red;
+}
+img.del{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 480px;
+    cursor: pointer;
+    
+}
+img.edit{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 510px;
+    cursor: pointer;
+}
+.gif{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 160px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <center>
+  <div class="main"> <h1>To-Do-List App</h1><img class="gif" src="./edit.gif" alt="">
+    <input type="text" class="intext" placeholder="Enter Item To Add.">
+  <p></p>
+    <button>Add</button></div>
+
+  <div class="adtext"></div>
+
+
+
+  
+
+
+    </div>
+
+</center>
+
+<script src="./app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html> 
+
